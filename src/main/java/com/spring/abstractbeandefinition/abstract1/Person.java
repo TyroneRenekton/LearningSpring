@@ -1,6 +1,4 @@
-package com.spring.abstractbeandifition.abstract1;
-
-import org.springframework.stereotype.Component;
+package com.spring.abstractbeandefinition.abstract1;
 
 /**
  * @author hms

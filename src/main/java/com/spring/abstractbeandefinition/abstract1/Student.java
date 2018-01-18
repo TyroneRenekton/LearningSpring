@@ -1,4 +1,4 @@
-package com.spring.abstractbeandifition.abstract1;
+package com.spring.abstractbeandefinition.abstract1;
 
 /**
  * @author hms
