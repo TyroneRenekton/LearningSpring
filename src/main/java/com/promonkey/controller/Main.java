@@ -2,7 +2,10 @@ package com.promonkey.controller;
 
 import com.spring.abstractbeandefinition.abstract1.Student;
 import com.spring.abstractbeandefinition.autowire.Auto;
+import org.springframework.beans.factory.xml.BeanDefinitionParserDelegate;
+import org.springframework.beans.factory.xml.XmlReaderContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.util.Assert;
 
 /**
  * @author hms
@@ -14,9 +17,7 @@ public class Main {
         ClassPathXmlApplicationContext applicationContext =
                 new ClassPathXmlApplicationContext("spring-context.xml");
 
-        Auto auto = (com.spring.abstractbeandefinition.autowire.Auto)applicationContext.getBean("auto");
-
-        System.out.println(auto.getStudent().getName());
+        Auto student = (Auto) applicationContext.getBean("auto");
 
     }
 }

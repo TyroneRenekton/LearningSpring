@@ -1,6 +1,5 @@
 package com.spring.abstractbeandefinition.autowire;
 
-import com.spring.abstractbeandefinition.abstract1.Person;
 import com.spring.abstractbeandefinition.abstract1.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -11,8 +10,11 @@ import org.springframework.stereotype.Component;
  * @desc
  */
 
-@Component
 public class Auto {
+
+    public Auto(){
+        System.out.println("=========auto=====");
+    }
     @Autowired
     Student student;
 
