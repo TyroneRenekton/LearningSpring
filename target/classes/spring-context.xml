@@ -12,7 +12,6 @@
         <property name="name" value="zhangsan"></property>
     </bean>
 
-    <bean id="student" class="com.spring.abstractbeandefinition.abstract1.Student" parent="person" autowire="byType" init-method="init"></bean>
-
-    <bean id="auto" class="com.spring.abstractbeandefinition.factorybean.MyFactoryBean"></bean>
+    <bean id="student" class="com.spring.abstractbeandefinition.abstract1.Student" parent="person" autowire="byType"
+          init-method="init" destroy-method="de"></bean>
 </beans>
