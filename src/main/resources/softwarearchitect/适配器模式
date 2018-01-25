@@ -1,8 +1,8 @@
 背景：
 
-现在有个工具bean，需要提供一个删除掉bean的方法。当不需要它的时候clear它。
+现在有个工具bean，需要提供一个删除掉bean（包含bean包含的对象等）的方法。当不需要它的时候clear它。
 
-destroy bean的方式有很多
+删除 bean的方式有很多
 
 这里已经有了一个含有 destroy 方法的接口
 
